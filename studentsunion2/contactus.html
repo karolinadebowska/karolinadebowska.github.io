@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Karola Debowska and Melanie Sjoberg">
+        <title>The Students' Union Building</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Incosolata|Space+Mono" rel="stylesheet">
+</head>
+<body>
+        <div id="wrapper">
+                <!-- Our Navigation Bar -->
+                <nav>
+                        <ul>
+                                <li><a href="index.html" accesskey="i">Home</a></li>
+                                <li><a href="architecture.html" accesskey="a">Architecture</a></li>
+                                <li><a href="food.html" accesskey="f">Food</a></li>
+                                <li><a href="supportservices.html" accesskey="s">Support</a></li>
+                                <li><a href="workspaces.html" accesskey="w">Work Spaces</a></li>
+                        </ul>
+                </nav>
+                <header>
+                    <div class="parent arrow">
+                        <a href="index.html"><img src="images/arrow.png" alt="&lArr; BACK"></a><!--a back button-->
+                        <h1 id="theme">Contact us</h1>
+                    </div>
+                </header>
+                <main>
+                        <div class="parent"> <!--to enable display-flex between description and a table-->
+                                <div class="description">
+                                        <p>Our team always appreciates comments and criticism to help us better our site.<br> Please fill out our form below to let us know what you thought!</p>
+                                        <!--code adapted from W3Schools: https://www.w3schools.com/howto/howto_css_contact_form.asp and Dr. Steve Maddock-->
+                                        <div class="container">
+                                                  <form action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl"
+                                                                  method="get">
+                                                          <input type="hidden" name="recipient" 
+                                                             value="mrsjoberg1@sheffield.ac.uk">
+                                                          <label for="fname">First Name</label>
+                                                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                                          <label for="lname">Last Name</label>
+                                                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                                          <label for="subject">Subject</label>
+                                                                    <input type="text" id="subject" name="subject" placeholder="Your subject.." />
+
+                                                          <label for="description">Description</label>
+                                                                    <textarea id="description" name="description" placeholder="Write something.." style="height:200px">
+                                                                    </textarea>
+                                                          <input type="submit" value="Submit"><!--a submit button-->
+                                                          <input type="reset"><!--a reset button-->
+                                                </form>
+                                        </div>
+                                        <!--the end of a form--> 
+                                </div>
+                                <table> <!-- Our Contact Information -->
+                                        <tr>
+                                                <th>Authors</th>
+                                                <td>Karolina Debowska</td>
+                                        </tr>
+                                        <tr>
+                                                <th></th>
+                                                <td>Melanie Sjoberg</td>
+                                        </tr>
+                                        <tr>
+                                                <th>Phone number:</th>
+                                                <td>+44 739 476 80 00</td>
+                                        </tr>
+                                        <tr>
+                                                <th></th>
+                                                <td></td>
+                                        </tr>
+                                </table>
+                        </div>
+                </main>
+                <div class="blog"> <!-- Link To Blog -->
+                        <h2><a href="Blog.html" class="button" accesskey="b" >Blog</a></h2>
+                </div>
+                <footer>
+                        <p><a href="contactus.html" accesskey="c">Contact Us</a></p>
+                        <p><a href="accessibility.html" accesskey="d">Accessibility</a></p>
+                        <p>Page made by Melanie Sjoberg and Karola Dębowska</p>
+                        <p>&copy; KaroMel 2018 </p>
+                </footer>
+        </div>
+</body>
+</html>

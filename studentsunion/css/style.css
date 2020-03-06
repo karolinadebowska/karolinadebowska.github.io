@@ -1,0 +1,133 @@
+
+body {margin:0;
+    padding: 0;
+     font-family: 'PT Sans', sans-serif;
+    background-color: #F4F1E8;}
+.shape {margin:0px 1.5% 2% 1.5%;
+        background-color: white;}
+
+img {width:30%;}
+
+div {border:solid 1px transparent;}
+
+.icon{padding:5% 0px 0px 0px;
+text-align: center;}
+
+.block {display: flex;
+        justify-content: center;}
+
+.miles {margin-top: 20px;}
+
+h1 {padding: 70px 50px 70px 0;
+text-align: center;}
+
+.right {width:75%;}
+.child {flex:1;}
+.child h1 {padding: 0;
+text-align: center;}
+
+.view {font-size: 30px;
+        text-align: center;}
+
+.parent {display:flex;
+        justify-content: space-around;}
+
+.price {flex:1;}
+
+.money {background-image: url('../images/')}
+
+.picture {background-image: url('../images/clouds-fog-forest-9754.jpg');
+height:300px;
+width:100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+a {text-decoration:none;}
+
+.nav li {flex:1;
+        font-family: 'Amatic SC', cursive;
+        font-size: 25px;}
+.nav a {color:white;}
+.nav ul {display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        background-color: #343E3D;
+        height: 28px;
+        padding:16px 0px;
+        margin-top: 250px;
+        text-align: center;}
+.wallpaper {background-image: url('../images/buzia.jpg');
+		background-size:contain;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position: center;
+		height:100vh;}
+.in1 {padding: 4% 2% 0% 8%;
+        font-size:20px;
+        text-align: center;}
+.in2 { margin-right: 20px;}
+.we {width:280px;
+	padding-left:200px;
+	padding-top:2%;}
+.index1{
+        margin-right:1.5%; 
+        margin-left:1.5%;
+	background-color:white;
+	border: 3px dotted #9EBEBC;
+	height:300px;}
+.index2 {background-color:white;
+	border: 3px dotted #9EBEBC;
+	height:300px;
+	margin-top:200px;
+    margin-right:1.5%; 
+    margin-left:1.5%;
+	}
+.we2 {width:280px;
+	padding-top:2%;
+	padding-bottom:2%;}
+.first {height:150vh;}
+.moretext {text-align: center;
+	height:100%;
+            padding: 5% 180px 0px 20px;
+            font-size:20px;}
+.shadow {margin-left: 70px;
+        margin-bottom: 30px;}
+.contact {margin-right:1.5%; 
+        margin-left:1.5%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+	   background-color:white;
+	   border: 3px dotted #9EBEBC;
+	   margin-top:178px;}
+.adv h1 {font-family: 'Amatic SC', cursive;
+		text-align:centre;}
+.adv {  margin-top: 30px;
+        margin-bottom: 25px;}
+.x {height:350px;
+    width:350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:1%;
+    border:solid 2px }
+.lv {background-image: url('../images/architecture-attraction-building-415999.jpg');}
+.zion {background-image: url('../images/canyon-landscape-mountain-248820.jpg');}
+.angel {background-image: url('../images/canyon-2179250_1920.jpg');}
+.arch {background-image: url('../images/delicate-arch-960279_640.jpg');}
+.mon {background-image: url('../images/arizona-desert-monument-valley-48182.jpg');}
+.antelope {background-image: url('../images/antelope-canyon-1128815_640.jpg');}
+.gc {background-image: url('../images/grand-canyon-1246248_640.jpg')}
+.bryce {background-image: url('../images/adventure-america-arid-415925.jpg');}
+.blue {background-image: url(../images/blue-sky-canyon-clouds-238368.jpg);}
+.abstract {background-image: url('../images/abstract-artistic-beauty-50570.jpg');}
+.map {border: 1px black solid;}
+.small {height:350px;
+        width:350px;
+        border:0;}
+.plan {font-family: 'Amatic SC', cursive;
+        font-size:22px;
+        text-align: center;
+        line-height: 5px;}
+.gap {padding-top: 40px;}
+.first{margin:0px;}
+.blank {height:60px;}

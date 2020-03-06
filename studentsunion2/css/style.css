@@ -1,0 +1,595 @@
+/* --------------------------------------------------------
+Style Sheet for the website of the Students' Union Building
+author: Karolina Debowska, Melanie Sjoberg
+----------------------------------------------------------*/
+body{
+	font-family:'Inconsolata',monospace;
+	letter-spacing: -0.6px;
+	background-color:rgb(245,245,245);
+    min-width:320px;
+    max-width:1400px;
+    margin:0 auto;
+}
+#wrapper{
+	width:100%;
+	background-color:rgb(240,237,202);
+	margin: 0 auto;
+}
+h1,h2,h3 {
+	font-family: 'Space Mono',monospace;
+}
+h2{
+	font-size:8vw;
+    margin:0 0 0 5%;
+}
+img{
+	width:100%;
+}
+nav {
+	display: none;
+}
+a {
+	text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+/*~~a home page~~~*/
+#architect {
+	margin-top:0;   
+}
+.architecture {
+	overflow:hidden;
+}
+/*~~~cutting off an image~~~~*/
+.main {
+	text-align: center;
+}
+#slogan{
+	text-align: center;
+	font-size: 12vw;
+    margin:0 0 5px 0;
+}
+.title{
+	font-size:5.5vw;
+    text-align: center;
+   	margin:0;
+}
+.s {
+	margin:20px 0 0 0;
+    font-size:4.5vw;
+}
+/*~~~~the inside menu~~~~~*/
+.smaller{
+	font-size: 6.5vw;
+}
+/*~~~positioning text on the images~~~~*/
+.inside{
+	position:relative; /*~~~changing the position from static~~~~*/
+	min-height:185px;
+}
+/*~~~adding padding to anchors in buttons~~~~*/
+.caption .smaller a{
+	padding:0 27px;
+}
+.captionfood .smaller a{
+	padding:0 34px;
+}
+.captioninside .smaller a{
+	padding:0 10px;
+}
+/*~~~the end~~~~*/
+.caption{
+	position:absolute; /*~~the word is positioned relative to its first positioned ancestor element~~*/
+    bottom:50.5%;
+	left:6%;
+}
+.captionfood{
+    position: absolute; /*~~the word is positioned relative to its first positioned ancestor element~~*/
+    bottom:50.5%;
+    left:47%;
+}
+.captioninside{
+	position: absolute;/*~~the word is positioned relative to its first positioned ancestor element~~*/
+	bottom:34%;
+	left:4.2%;
+}
+.inside h2{
+	margin:0;
+}
+/*~~~positioning text on the images~~~~*/
+/*end of the inside menu*/
+/*~~~~~~~the end of a home page~~~~~*/
+/*~~~a footer~~~~*/
+footer{
+	background-color: rgb(136,0,27);
+    text-align: center;
+    color:white;
+    padding:30px 2% 30px 2%;
+    box-sizing: border-box; /*~~~The height and width include also padding, so that the width of a body will not be increased~~~*/
+    font-size: 4vw;
+	letter-spacing:0px;
+}
+footer a{
+	color:white;
+}
+/*~~~the end of a footer~~~~*/
+/*~a blog button~*/
+.button {
+	border:2px solid black;
+    padding:3px 10px;
+    font-size:1em;
+}
+.blog{
+	margin:50px 0 70px 60%;
+}
+/*~the end of a blog blog~*/
+/*~~arrows displayed on mobiles~~*/
+.pointer{
+	display: block;
+    margin:auto;
+    padding-top:20px;
+    width:10%;
+}
+/*~~~~the end of arrows~~*/
+
+/*~~~~~~~~~workspaces~~~~~~~~~*/ 
+#theme{
+	text-align: right;
+    margin:40px 2% 0 0;
+    font-size: 7vw;
+    border-bottom: 2px rgb(255,165,0) solid;
+    display: block;
+    float:right;
+}
+.desktop{
+	display: none;
+}
+.mobile{
+	padding:0 5% 0 5%;
+    max-width: 550px;
+    box-sizing: border-box; /*~~~The height and width include also padding and margin, so that the width of a body will not be increased~~~*/
+    margin: auto;
+}
+.description{
+	padding:0 4%;
+    box-sizing: border-box;
+    font-size: 6vw;
+    line-height: 1.2em;
+	letter-spacing:-1.3px;
+}
+.description h3 {
+	font-size:6.5vw;
+}
+.arrow {
+	margin:0 0 4% 3%;
+}
+header .parent img{
+	width:4em;
+	margin:2em 0 0 0;
+}
+/*~~~~~~~~end of workspaces~~~~~~~~~*/ 
+/*~~~~support services~~~~*/
+.photo {
+        padding:0 10%;
+}
+/*~~~~end of support services~~~~*/
+/*~~~~~~~~~a contact page ~~~~~~~~~*/
+table {
+	margin:5% auto;
+	order:2;
+}
+/*~a form~~*/
+/* ~~~code adapted from W3Schools: https://www.w3schools.com/howto/howto_css_contact_form.asp~~~*/
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid rgb(255,165,0);
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin: 6px 0 16px 0; 
+    resize: vertical; 
+}
+input[type=submit], input[type=reset]{
+    padding: 8px 20px;
+    cursor: pointer;
+    font-family:'Space Mono',monospace; 
+    font-size:4vw;
+    color:black;
+    font-weight:600;
+    background-color:rgb(240,237,202);
+    border:2px solid black;
+    margin:0 2%;
+}
+#lname, #fname, #subject, #descriptionform{
+    font-size:5vw;
+	font-family:'Inconsolata',monospace;
+}
+input[type=submit]:hover {
+    background-color: white;
+}
+input[type=reset]:hover {
+    background-color:white;}
+.container {
+    font-family: 'Space Mono',monospace; 
+    background-color: rgb(240,237,202);
+    padding: 20px;
+    margin:2%;
+}
+/*~the end of a form~~*/
+/*~~~hover effects~~~~*/
+.blog a:hover{
+	background-color: white;
+}
+.inside a:hover{
+	position:relative;
+	left:5%;
+	transition: all 0.8s ease;}
+li a:hover{
+	background-color: white;
+	transition: all 0.1s ease;
+}
+/*~~~end of hover effects~~~~*/
+
+/*~~~an architecture page~~~~*/
+figcaption{
+	text-align: center;
+    padding-top:16px;
+}
+.reference {
+	margin-top:50px;
+	font-size:4vw;
+}
+/*~~~the end of architecture page~~~~*/
+
+@media screen and (min-width: 600px){
+	.parent{
+		display: flex;
+   		flex-direction: row;}
+   	h2{
+    	font-size:3vw;
+    }
+    /*~~arrows~~~*/
+    .pointer {
+    	display: none;
+    }
+    .arrow {
+    	margin:0;
+    }
+    /*~~~~the end of arrows~~~*/
+    /*~~a navigation bar~~*/
+    nav{
+    	display: block;
+    	margin:0;
+    }
+    nav ul{
+        padding:1% 1%;
+        box-sizing: border-box;
+        margin:0 2%;
+        display:flex;
+        list-style:none;
+		flex:1;
+        }
+    nav ul li{
+		margin:auto 0;
+        text-align: center;
+        font-family: 'Space Mono',monospace;
+        flex:1;
+        font-size:2.2vw;
+    }
+    /*~~the end of a navigation bar~~*/
+ 	/*~~~~a home page~~~~*/
+    .title {
+    	font-size:3vw;
+    }
+    .s {
+    	padding:20px 0 0 0;
+        font-size: 2.2vw;
+		letter-spacing: 0px;
+		margin:0 0 20px 0;
+    }
+    #slogan{
+    	text-align: center;
+        font-size: 10vw;
+        margin: 10px 0 0 0;
+    }
+    .architecture {
+    	width:50%;
+    	float:right;
+    }
+    /*~~a moving section~~*/
+    .architecture a:hover{
+    	position:relative;
+        top: -5px;
+        left:10px;
+     } 
+    /*~~~the inside menu~~~*/
+    .inside{
+    	padding-bottom:10%;
+    	width:50%;
+    	margin:3% 0 0 2%;
+    } 
+      /*~~positioning words on top of the image~~*/
+     .caption{
+      	  bottom:63%;
+      	  left:10%;
+	  }
+	.captionfood{
+		bottom:63%;
+		left:49%;
+	}
+	.captioninside{
+		bottom:50%;
+		left:8%;
+	}
+	.smaller{
+		font-size:3vw;
+	}
+	/*~~~adding padding to anchors in buttons~~~~*/
+	.caption .smaller a{
+		padding:0 20px;
+	}
+	.captionfood .smaller a{
+		padding:0 30px;
+	}
+	.captioninside .smaller a{
+		padding:0 10px;
+	}
+	/*~~~the end~~~~*/
+     /*~~~the end of an inside menu~~~*/	 
+     .main {
+     	 padding: 0 3%;
+     	 box-sizing: border-box;
+     	 border-bottom:10px rgb(255,165,0) solid;
+     	 margin:0 25%;
+     	 position:relative;
+     }
+    /*~~~~the end of a home page~~~~*/
+    /*~~~~a footer~~~~~~*/
+    footer{
+    	font-size: 1.8vw;
+    }
+    /*~~~~the end of a footer~~~~~~*/
+    /*~~~~~~~~~workspaces~~~~~~~~~*/ 
+    .mobile {
+    	display: none;
+    }
+    .desktop {
+    	display: block;
+		padding:2%;
+        margin:5% auto;
+        max-width:1200px;
+    }
+    header .parent img{
+    	display: none;
+    }
+    #theme{
+    	padding:2% 2% 2% 0;
+        font-size:5vw;
+        text-align:right;
+    }
+    .description{
+    	font-size:1.4em;
+    	line-height:30px;
+    	letter-spacing:-1.9px;
+    	flex:2;
+    	padding:0 5%;
+	}
+	/*~~~~~~~~the end of workspaces~~~~~~~~~*/ 
+	/*~~~~ a blog button~~~~*/
+    .button {
+    	border:2px solid black;
+        padding:5px 10px;
+    }
+    .blog{
+    	margin: 5% 0 10% 80%;
+}
+	/*~~~~the end of a blog button~~~~*/
+	/*~~~~~ a support services~~~~~*/
+    .photo{
+    	flex:1;
+    }
+    .swap{
+    	order:2;
+        padding-top:40px;
+    }
+    .description h3{
+    	font-size:4vw;
+    	line-height: 1em;
+    }
+    .ws {
+    	min-height: 400px;
+    }
+    .right{
+    	text-align: right;
+    }
+    /*~~~~the end of support services*/
+	/*~~~~a contact page~~~~*/
+    table {
+    	position: fixed;
+        right:0;
+        top:50%;
+        background-color: white;
+        border:1px solid rgb(255,165,0);
+}
+	/*~~~~a form~~~~*/    
+	.container{
+		max-width:700px;
+		float:inherit;   /*~~float from parent's element~~*/
+   		margin:0 2%;
+   	}
+   	#lname, #fname, #subject, #descriptionform{
+   		font-size:1.7vw;
+   	}
+    input[type=submit],input[type=reset] {
+    	font-size:2vw;
+    }
+    /*the end of a form*/
+	/*~~~~the end of a contact page~~~~*/
+	/*~~~an architecture page~~~~*/
+	.plan {
+		width:38vw;
+		margin:2% 1%;
+	}
+    .description{
+    	margin: 40px auto;
+    }
+	.reference {
+		margin-top:4%;
+		font-size:2.5vw;
+	}
+    .last {
+    	margin:0 auto;
+  		width:45%;
+  	}
+  	.plan img {
+		width:100%;
+	}
+	/*~~~the end of an architecture page~~~~*/
+	/*~~~a food page~~~~*/
+    .photo {
+    	background-position: center;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	margin:2% 1%;
+    	max-width:700px;
+    	min-width:200px;
+		box-sizing: border-box;
+	}
+     /*~~images that aren't displayed~~*/
+     .interval img{
+     	display:none;
+     }
+     .revolution img{
+     	display:none;
+     }
+     .bar img{
+     	display:none;
+     }
+     .view img{
+     	 display:none;
+     }
+     /*~~the end of not displayed images~~*/
+     /*~~instead of, putting background images~~*/
+    .interval {
+    	background-image: url('../images/inter.jpg');
+    }
+     .revolution {
+     	 background-image: url('../images/revol.jpg');
+     	 order:2;
+     }
+     .bar {
+     	 background-image: url('../images/barone.jpg');
+     }
+     .view {
+     	 background-image: url('../images/view.jpg');
+     	 background-position: right;
+     	 order:2;
+     }
+     /*~~the end of background images~~*/
+     /*~~~the end of a food page~~~~*/
+     /*~~a blog page~~*/
+	.blog0 img{
+		display:none;
+	}
+	.blog1 img{
+		display:none;
+	}
+	.blog2 img{
+		display:none;
+	}
+	.blog3 img{
+		display:none;
+	}
+	.blog0 {
+		background-image: url('../images/Photo3.jpg');
+	}
+	.blog1 {
+		background-image: url('../images/Photo5.jpg');
+	}
+	.blog2 {
+		background-image: url('../images/Photo1.jpg');
+	}
+	.blog3 {
+		background-image: url('../images/Photo4.jpg');
+	}
+/*~~the end of a blog page~~*/
+/*~~~~~the link to the university's page~~~~*/
+    .find {
+    	padding:0 4%;
+    }
+/*~~~~the end fo the link~~~~*/
+}
+
+/*~~~~the tweakpoint~~~~*/
+@media screen and (min-width: 1200px){
+	nav ul li{
+		font-size:1.6vw;
+	}
+	input[type=submit], input[type=reset], .button{
+		font-size:0.7em;
+	}
+	footer{
+		font-size:1.2vw;
+	}
+	#slogan{
+		font-size:9vw;
+	}
+	.title {
+		font-size:2.8vw;
+	}
+	.s {
+		font-size:1.8vw;
+	}
+	#lname, #fname, #subject, #descriptionform{
+		font-size:1em;
+	}
+	.reference {
+		margin-top:4%;
+		font-size:2vw;
+	}
+}
+
+/*~~~~the tweakpoint~~~~*/
+@media screen and (min-width: 1500px){
+	.title{
+		font-size:2.2vw;
+	}
+	.s {
+		font-size:1.5vw;
+	}
+	#slogan {
+		font-size:8vw;
+	}
+	.smaller{
+		font-size:2.3vw;
+	}
+	table{
+		position:relative;
+	}
+	.caption{
+		bottom:62%;
+		left:10%;
+	}
+	.captionfood{
+		bottom:62%;
+		left:47%;}
+	.captioninside{
+		bottom:48%;
+		left:7%;
+	}
+	.reference {
+		margin-top:4%;
+		font-size:1.5vw;
+	}
+	/*~~~adding padding to anchors in buttons~~~~*/
+	.caption .smaller a{
+		padding:0 30px;
+	}
+	.captionfood .smaller a{
+		padding:0 30px;
+	}
+	.captioninside .smaller a{
+		padding:0 25px;
+	}
+	/*~~~the end~~~~*/
+}
