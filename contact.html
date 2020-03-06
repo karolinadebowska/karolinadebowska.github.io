@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Karolina Debowska">
+<title>Debowska Portfolio</title>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Incosolata|Space+Mono" rel="stylesheet">
+        <!--hamburger icon-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+<div class="containerNav">
+<nav class="topnav" id="myTopnav">
+    <ul>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a></li>
+        <li><a href="index.html" accesskey="i">Who</a></li>
+        <li><a href="about.html" accesskey="a">What</a></li>
+        <li><a href="projects.html" accesskey="f">Why</a></li>
+        <li><a href="contact.html" accesskey="w">Contact</a></li>
+
+    </ul>
+</nav>
+    <div class="top">
+    </div>
+    </div>
+<header class="main">
+    <h1 id="slogan" text-align="left">Let's talk</h1>
+</header>
+<main>
+<img id ="card" src="images/wizytowka1.PNG">
+    
+<h2 class="loveCode" style="margin-bottom: 3%;">FUN FACT! Did you notice that the background is made out of my skin? </h2>
+</main>
+          <footer>
+            <p><a href="contact.html" accesskey="c">Contact</a></p>
+            <p>&copy; Karolina Debowska</p>
+     </footer>
+</div>
+        <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,554 @@
+/* --------------------------------------------------------
+author: Karolina Debowska
+----------------------------------------------------------*/
+/*hamburger menu*/
+* {
+  box-sizing: border-box;
+}
+.topnav a {
+    display: block;
+}
+li {
+    list-style-type: none;
+}
+.hobbies{
+    display: block;
+}
+.button{
+    border-radius: 50%;
+background-color: white;
+  border: none;
+  color: black;
+    width:30vw;
+    height:30vw;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+    flex-wrap: wrap;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.topnav {
+    position: absolute;
+  overflow: hidden;
+    padding-left:1em;
+    z-index: 10;
+}
+.topnav a{display: none;}
+.containerNav{
+      position: relative;
+    height:50px;
+    margin-bottom: 1em;
+}
+  .topnav a.icon {
+    display: block;
+      width:35px;
+  }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  .topnav.responsive {
+      position: absolute;
+      padding-right:70vw;
+      align-content: space-around;
+}
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+.top{
+    display: block;
+    position: relative;
+background-color: white;
+opacity: 0.6;
+height:60px;
+z-index:0;}
+ul{
+    padding-left: 0px;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+    color:white;
+	letter-spacing: -0.6px;
+    min-width:320px;
+    max-width:1400px;
+    margin:0 auto;
+    	background-color:black;
+    background-image:url('../images/tlo2.png'),
+                    url('../images/tlo1.png'),
+                    url('../images/tlo3.png');
+    animation:motion 800s linear infinite alternate;
+}
+
+@keyframes motion
+{
+  0% { background-position:0 0, 0 0, 0 0; }
+  100% { background-position:1000px 0, 2000px 0, 3000px 0;}
+}
+
+@keyframes motion2
+{
+  0% { background-position:0 350px; }
+  100% { background-position:385px 500px;}
+}
+.loveCode {
+    font-size: 18px; margin-right: 4%;background-color: black;max-width: 90vw;
+    margin-top: 2%;
+    text-align: right;
+}
+#wrapper{
+	width:100%;
+	background-color:black;
+    background-image:url('../images/tlo2.png'),
+                    url('../images/tlo1.png'),
+                    url('../images/tlo3.png');
+    animation:motion 800s linear infinite alternate;
+    margin: 0 auto;
+}
+
+h1,h2,h3 {
+	font-family: 'Space Mono', monospace;
+}
+h2{
+	font-size:8vw;
+    margin:0 0 0 5%;
+}
+img{
+	width:100%;
+}
+
+a {
+	text-decoration: none;
+    color:black;
+    padding: 10px;
+}
+/*~~a home page~~~*/
+#architect {
+	margin-top:0;   
+}
+.architecture {
+    text-align: center;
+    flex:1;
+	overflow:hidden;
+}
+.ws {padding:3%;}
+/*~~~cutting off an image~~~~*/
+.main {
+	text-align: right;
+}
+#slogan{
+    padding-right:4%;
+	font-size: 12vw;
+    margin:0 0 5px 0;
+}
+.title{
+	font-size:5.5vw;
+    margin:0;
+}
+.s {
+	margin:20px 0 0 0;
+    font-size:4.5vw;
+}
+/*~~~~the inside menu~~~~~*/
+.smaller{
+	font-size: 6.5vw;
+}
+/*~~~positioning text on the images~~~~*/
+.inside{
+    width:100%;
+    text-align: center;
+	position:relative; /*~~~changing the position from static~~~~*/
+    background-color: black;
+    box-sizing: border-box;
+    padding:30px 2% 30px 2%;
+	min-height:185px;
+    margin:5vh 0;
+}
+/*end of the inside menu*/
+    .bottom {
+        text-align: center;
+    }
+/*~~~~~~~the end of a home page~~~~~*/
+/*~~~a footer~~~~*/
+footer{
+	background-color: black;
+    text-align: center;
+    color:white;
+    padding:30px 2% 30px 2%;
+    box-sizing: border-box; 
+    font-size: 4vw;
+	letter-spacing:0px;
+}
+footer a{
+	color:white;
+}
+/*~~~the end of a footer~~~~*/
+
+/*~~arrows displayed on mobiles~~*/
+.pointer{
+	display: block;
+    margin:auto;
+    padding-top:20px;
+    width:10%;
+}
+/*~~~~the end of arrows~~*/
+
+/*~~~~~~~~~workspaces~~~~~~~~~*/ 
+#theme{
+	text-align: right;
+    margin:40px 2% 0 0;
+    font-size: 7vw;
+    border-bottom: 2px rgb(255,165,0) solid;
+    display: block;
+    float:right;
+}
+.desktop{
+	display: none;
+}
+.mobile{
+	padding:0 5% 0 5%;
+    max-width: 550px;
+    box-sizing: border-box; /*~~~The height and width include also padding and margin, so that the width of a body will not be increased~~~*/
+    margin: auto;
+}
+.description{
+	padding:0 4%;
+    box-sizing: border-box;
+    font-size: 6vw;
+    line-height: 1.2em;
+	letter-spacing:-1.3px;
+}
+.description h3 {
+	font-size:6.5vw;
+}
+.arrow {
+	margin:0 0 4% 3%;
+}
+header .parent img{
+	width:4em;
+	margin:2em 0 0 0;
+}
+/*~~~~~~~~end of workspaces~~~~~~~~~*/ 
+/*~~~~support services~~~~*/
+.photo{padding:2%;}
+.myimage:hover{
+    opacity: 0.6;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/*~~~~end of support services~~~~*/
+/*~~~~~~~~~a contact page ~~~~~~~~~*/
+#card {
+    width:80vw;margin:4% auto 10% auto;display:block;
+}
+table {
+	margin:5% auto;
+	order:2;
+}
+.container {
+    background-color: rgb(240,237,202);
+    padding: 20px;
+    margin:2%;
+}
+/*~the end of a form~~*/
+/*~~~hover effects~~~~*/
+
+.a:hover{
+	background-color: white;
+    
+}
+
+li a{
+	background-color: black;
+    color:white;
+}
+li a:hover{
+	background-color: white;
+    color:black;
+}
+/*~~~end of hover effects~~~~*/
+#moreAboutMe{
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#bio{
+    color:black;
+    background-color: white;
+    width:90vw;
+    margin:5% auto;
+}
+/*~~~an architecture page~~~~*/
+figcaption{
+	text-align: center;
+    padding-top:16px;
+}
+.reference {
+	margin-top:50px;
+	font-size:4vw;
+}
+/*~~~the end of architecture page~~~~*/
+
+@media screen and (min-width: 600px){
+    .button{display: inline-block;
+    width:17vw;
+    height:17vw;
+    margin-right:4em;}
+    hobbies{
+        margin-left:18vw;
+    }
+    .top{display: none;}
+      .topnav.responsive {
+          position: relative;}
+    .loveCode{text-align: left;}
+    .topnav{position: relative;}
+    .app{flex-direction: row;}
+    .ws {padding:1.5%;}
+    .topnav a{display:block;}
+ .topnav a.icon {
+  display: none;
+}
+    #card{width:50vw;}
+	.parent{
+		display: flex;
+   		flex-direction: row;
+        flex-wrap: wrap;}
+    .x{
+        flex:1;   
+    }
+   	h2{
+    	font-size:3vw;
+    }
+    /*~~arrows~~~*/
+    .pointer {
+    	display: none;
+    }
+    .arrow {
+    	margin:0;
+    }
+    /*~~~~the end of arrows~~~*/
+    /*~~a navigation bar~~*/
+    nav{
+    	display: block;
+    	margin:0;
+    }
+    nav ul{
+        padding:1% 1%;
+        box-sizing: border-box;
+        margin:0 2%;
+        display:flex;
+        list-style:none;
+		flex:1;
+        }
+    nav ul li{
+		margin:auto 0;
+        text-align: center;
+        flex:1;
+        font-size:2.2vw;
+    }
+    /*~~the end of a navigation bar~~*/
+ 	/*~~~~a home page~~~~*/
+    .title {
+    	font-size:3vw;
+    }
+    .s {
+    	padding:20px 0 0 0;
+        font-size: 2.2vw;
+		letter-spacing: 0px;
+		margin:0 0 20px 0;
+    }
+    #slogan{
+        text-align: center;
+        font-size: 10vw;
+        margin: 10px 0 0 0;
+        padding-left: 2rem;
+    }
+    /*~~a moving section~~*/
+    .architecture a:hover{
+    	position:relative;
+        top: -5px;
+        left:10px;
+     } 
+    /*~~~the inside menu~~~*/
+    .inside{
+    	padding-bottom:2%;
+    } 
+     /*~~~the end of an inside 
+    menu~~~*/
+     .main {
+     	 padding: 0 0 0 0;
+         right:5%;
+         left:0;
+         text-align:right;
+     	 /*border-bottom:10px white solid;*/
+     	 margin:0;
+         flex:1;
+     	 position:relative;
+     }
+    /*~~~~the end of a home page~~~~*/
+    /*~~~~a footer~~~~~~*/
+    footer{
+    	font-size: 1.8vw;
+    }
+    /*~~~~the end of a footer~~~~~~*/
+    /*~~~~~~~~~workspaces~~~~~~~~~*/ 
+    .mobile {
+    	display: none;
+    }
+    .desktop {
+    	display: block;
+		padding:2%;
+        margin:5% auto;
+        max-width:1200px;
+    }
+    header .parent img{
+    	display: none;
+    }
+    #theme{
+    	padding:2% 2% 2% 0;
+        font-size:5vw;
+        text-align:right;
+    }
+    .description{
+    	font-size:1.4em;
+    	line-height:30px;
+    	letter-spacing:-1.9px;
+    	flex:2;
+    	padding:0 5%;
+	}
+	/*~~~~~~~~the end of workspaces~~~~~~~~~*/ 
+	/*~~~~~ a support services~~~~~*/
+    .photo{
+    	flex:1;
+    }
+    .swap{
+    	order:2;
+        padding-top:40px;
+    }
+    .description h3{
+    	font-size:4vw;
+    	line-height: 1em;
+    }
+    .right{
+    	text-align: right;
+    }
+    /*~~~~the end of support services*/
+	/*~~~~a contact page~~~~*/
+    table {
+        color:black;
+        padding:2%;
+        background-color: white;
+        border:black;
+}
+	/*~~~~a form~~~~*/    
+	.container{
+		max-width:700px;
+		float:inherit;   /*~~float from parent's element~~*/
+   		margin:0 2%;
+   	}
+   	#lname, #fname, #subject, #descriptionform{
+   		font-size:1.7vw;
+   	}
+    input[type=submit],input[type=reset] {
+    	font-size:2vw;
+    }
+    /*the end of a form*/
+	/*~~~~the end of a contact page~~~~*/
+	/*~~~an architecture page~~~~*/
+	.plan {
+		width:38vw;
+		margin:2% 1%;
+	}
+    .description{
+    	margin: 40px auto;
+    }
+	.reference {
+		margin-top:4%;
+		font-size:2.5vw;
+	}
+    .last {
+    	margin:0 auto;
+  		width:45%;
+  	}
+  	.plan img {
+		width:100%;
+	}
+	/*~~~the end of an architecture page~~~~*/
+	/*~~~a food page~~~~*/
+    .photo {
+    	background-position: center;
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	margin:2% 1%;
+    	max-width:700px;
+        min-width:40%;
+		box-sizing: border-box;
+	}
+     /*~~~the end of a food page~~~~*/
+/*~~~~~the link to the university's page~~~~*/
+    .find {
+    	padding:0 4%;
+    }
+/*~~~~the end fo the link~~~~*/
+}
+
+/*~~~~the tweakpoint~~~~*/
+@media screen and (min-width: 1200px){
+    #bio{width:67vw;}
+    ws {padding:1%;}
+        #card{width:35vw;}
+      .x{
+        flex:1;   
+    }
+    .x{flex:3;
+        padding:0;
+    right:0px;}
+	nav ul li{
+		font-size:1.6vw;
+	}
+	footer{
+		font-size:1.2vw;
+	}
+	#slogan{
+        text-align: left;
+		font-size:9vw;
+	}
+	.title {
+		font-size:2.8vw;
+	}
+	.s {
+		font-size:1.8vw;
+	}
+	#lname, #fname, #subject, #descriptionform{
+		font-size:1em;
+	}
+	.reference {
+		margin-top:4%;
+		font-size:2vw;
+	}
+}
+
+/*~~~~the tweakpoint~~~~*/
+@media screen and (min-width: 1500px){
+	.title{
+		font-size:2.2vw;
+	}
+	.s {
+		font-size:1.5vw;
+	}
+	#slogan {
+		font-size:8vw;
+	}
+	.smaller{
+		font-size:2.3vw;
+	}
+	table{
+		position:relative;
+	}
+	/*~~~the end~~~~*/
+}

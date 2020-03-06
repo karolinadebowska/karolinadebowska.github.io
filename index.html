@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Karolina Debowska">
+<title>Debowska Portfolio</title>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Incosolata|Space+Mono" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+        <div class="containerNav">
+<nav class="topnav" id="myTopnav">
+    <ul>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a></li>
+        <li><a href="index.html" accesskey="i">Who</a></li>
+        <li><a href="about.html" accesskey="a">What</a></li>
+        <li><a href="projects.html" accesskey="f">Why</a></li>
+        <li><a href="contact.html" accesskey="w">Contact</a></li>
+
+    </ul>
+</nav>
+    <div class="top">
+    </div>
+    </div>
+    <div class="parent">
+        <header class="main">
+    <h1 id="slogan">Who I am?</h1>
+</header>
+<div class="architecture">
+       <a href="architecture.html">
+       <img src="images/cut.png" alt="Click to ..."> </a>
+        </div>
+    </div>
+<aside class="inside" id="bio"> <!--about me-->
+    <h1>Hi! My name is Karolina. <br><br>- raised in Poland <br><br>- coder, jazz pianist, photographer, travel enthusiast<br><br>- traveled 4209.36 miles to pursue my dreams.
+        <br><br>- take care of: technology, art, environment.<br><br>- dream job: remote!</h1>
+</aside>
+    <aside class="inside" id="moreAboutMe">
+    <h1>I am an undergraduate student of Software Engineering at the University of Sheffield. Being a successful nominee of the Global Engineering Exchange enables me now to study in New York Metropolitan Area in New Jersey Institute of Technology.  <br>
+        I love the process of creation. Being into software engineering seems to be an architect and a constructor of the virtual world. It combines many fields of knowledge from creating apps to understanding people’s needs.
+The thing I’m passionate the most about Computer Science is ... coding and problem-solving. Why? <br>Because I find them very addictive and I'm an addict.
+</h1>
+</aside>
+    <!--
+    <div class="hobbies">
+    <button class="button coding">CODING</button>
+<button class="button music">MUSIC</button>
+<button class="button photography">PHOTOGRAPHY</button>
+    </div>
+    -->
+      <footer>
+            <p><a href="contact.html" accesskey="c">Contact</a></p>
+            <p>&copy; Karolina Debowska</p>
+     </footer>
+</div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
