@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Karolina Debowska">
+        <title>Project E-Commerce</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="navigation">
+                <ul class="nav_container">
+                    <li><a href="index.html" accesskey="i">About</a></li>
+                    <li><a href="productList.html">Plants</a></li>
+                </ul>
+            </nav>
+            <section class="carousel">
+                <h1 id="title">The Yard</h1>
+                <img id="slide1" class="active" src="images/slide1.jpg">
+                <img id="slide2" src="images/slide2.jpg">
+                <img id="slide3" src="images/slide3.jpg">
+                <img id="slide4" src="images/slide4.jpg">
+            </section>
+            <header>          
+                <h1>Our Plants</h1></header>
+            <main class="productList">
+                <div class="filter-wrapper">
+                    <div class="form">
+                        <label for="price">Price range </label>
+                        <select id="price" name="price">
+                            <option value="priceAll">select</option>
+                            <option value="20">under 20$</option>
+                            <option value="50">20$-50$</option>
+                            <option value="70">51$-70$</option>
+                            <option value="100">71$-100$</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="size">Size </label>	
+                        <select id="size" name="size">
+                            <option value="sizeAll">select</option>
+                            <option value="small">small</option>
+                            <option value="large">large</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                    <label for ="sortBy">Sort by </label>
+                    <select id="sortBy" name="sortBy">
+                        <option value = "none"></option>
+                        <option value = "sortPrice">price</option>
+                        <option value = "sortId">name</option>
+                        </select>
+                    </div>
+			     </div>
+                <!--input added with JavaScript-->
+                <div id="sortedList"></div>  
+            </main>
+            <footer>
+                <div class="footer_text">
+                    <!--links to social media-->
+                    <p>+1 (207)-373-2749</p>
+                    <p>&copy; The Yard</p>
+                    <p>128 Washington St, New York<br>NY 10025 </p>
+                </div>
+            </footer>
+        </div>
+    <script src="js/productList.js"></script>
+    </body>
+</html>
