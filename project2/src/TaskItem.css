@@ -1,0 +1,26 @@
+.list-group-item-text{
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 5%;
+    text-align: center;
+    color:black;
+}
+.col-sm-3 {
+  padding:0.2%;
+}
+.list-group-item {
+  padding-left:9%;
+  padding-right:9%;
+  border-radius: 15px;
+}
+.btn-primary{
+  background-color: white;
+  color:black;
+  font-size: 40px;
+  padding:0;
+  width:62px;
+  height:62px;
+  border:none;
+}
